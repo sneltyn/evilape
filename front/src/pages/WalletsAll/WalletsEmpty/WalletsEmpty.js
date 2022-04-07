@@ -5,14 +5,11 @@ import WalletView from "../views";
 
 const WalletEmpty = React.memo((props) => {
   const [modalAdd, setIsModalAdd] = useState(false);
-  
 
   const handleEdit = (e) => {
     e.preventDefault();
-    setIsProfileModal(true);
+    // setIsProfileModal(true);
   };
-
-  
 
   return (
     <>
@@ -49,7 +46,6 @@ const WalletEmpty = React.memo((props) => {
           </div>
         </div>
       </Laoyut>
-      
     </>
   );
 });

@@ -8,7 +8,7 @@ const WalletEmpty = React.memo((props) => {
 
   const handleEdit = (e) => {
     e.preventDefault();
-    setIsProfileModal(true);
+    // setIsProfileModal(true);
   };
 
   return (
