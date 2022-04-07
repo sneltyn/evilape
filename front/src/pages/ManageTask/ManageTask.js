@@ -17,7 +17,7 @@ const ManageTask = React.memo((props) => {
   const [currentRadioValue, setCurrentRadioValue] = useState();
 
   const handleRadioChange = (e) => {
-    setCurrentValue(e.target.value);
+    // setCurrentValue(e.target.value);
   };
 
   return (
