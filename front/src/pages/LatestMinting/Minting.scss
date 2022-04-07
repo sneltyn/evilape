@@ -1,0 +1,263 @@
+.wallet {
+  &__inner {
+    overflow: scroll;
+    width: 100%;
+
+
+  }
+
+  &__table {
+    overflow: hidden;
+
+    tbody {
+      padding-right: 10px;
+      display: block;
+      height: 50px;
+      overflow: auto;
+      // width: 100%;
+      overflow-y: auto;
+      height: calc(100vh - 254px);
+      padding-right: 10px;
+
+      &::-webkit-scrollbar-thumb {
+        background: #222533;
+        border-radius: 20px;
+        width: 4px;
+        border-left: 3px solid #13151E;
+        border-right: 3px solid #13151E;
+        background-clip: padding-box;
+        border: 3px solid rgba(0, 0, 0, 0);
+        max-height: 40px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #13151E;
+        border-radius: 20px;
+      }
+
+
+
+      &::-webkit-scrollbar {
+        background: transparent;
+        width: 12px;
+        display: block;
+        border-radius: 20px;
+      }
+    }
+
+    thead,
+    tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    thead {
+      width: calc(100% - 12px - 1em);
+
+    }
+
+    table {
+      width: 400px;
+    }
+
+
+
+    &--empty {
+      table {
+        thead {
+          tr {
+            position: relative;
+          }
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead,
+      tbody {
+        tr {
+          position: relative;
+
+          th,
+          td {
+            padding-bottom: 10px;
+            text-align: left;
+            font-size: 12px;
+            color: #747c90;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border: transparent;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          td {
+
+            background-color: #13151E;
+            padding: 12px 0;
+            font-size: 13px;
+
+            &:first-child {
+              padding-left: 25px;
+            }
+
+            &.blue {
+              color: #1556ee;
+            }
+
+            &.bold {
+              font-weight: 700;
+              color: #fff;
+            }
+
+            &.cyan {
+              color: #50FAFA;
+            }
+            &.text-hover {
+              transition: color .3s;
+              &:hover {
+                color: #3c75fa;
+              }
+            }
+
+            .eth {
+              display: flex;
+              align-items: center;
+              color: #FFFFFF;
+
+              &::before {
+                content: '';
+                margin-right: 6px;
+                display: inline-block;
+                width: 1em;
+                height: 2em;
+                background-image: url(../../assets/images/etherium-logo.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+
+          }
+        }
+
+        tr:first-child {
+          border-top: transparent;
+
+          td:first-child {
+            border-top-left-radius: 16px;
+          }
+
+          td:last-child {
+            border-top-right-radius: 16px;
+          }
+        }
+
+        tr:last-child {
+          td:first-child {
+            border-bottom-left-radius: 16px;
+          }
+
+          td:last-child {
+            border-bottom-right-radius: 16px;
+          }
+        }
+      }
+    }
+
+    &--checked {
+      width: 17px;
+      height: 17px;
+      border: 2px solid #50FAFA;
+      border-radius: 2px;
+    }
+  }
+}
+
+.minting {
+  &__tab-title-wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 55px;
+    padding-top: 23px;
+    margin-bottom: 24px;
+  }
+
+  &__tab-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background-image: url(../../assets/images/timer.svg);
+      margin-right: 8px;
+    }
+  }
+
+  &__tab-sub-title {
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #50FAFA;
+  }
+
+  &__table {
+    height: calc(100vh - 198px);
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead,
+      tbody {
+        tr {
+          position: relative;
+
+          th,
+          td {
+            padding-bottom: 10px;
+            text-align: left;
+            font-size: 12px;
+
+            &:nth-child(1n) {
+              width: unset;
+            }
+          }
+
+          td {
+            color: #CCD2E3;
+          }
+
+          th {
+            color: #747C90;
+          }
+
+          td:first-child {
+            padding-left: 50px;
+          }
+
+          td:last-child {
+            padding-right: 50px;
+          }
+        }
+      }
+      tbody {
+        height: calc(100vh - 222px);
+      }
+    }
+  }
+}

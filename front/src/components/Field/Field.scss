@@ -1,0 +1,90 @@
+.field {
+  display: block;
+  position: relative;
+
+  &__label {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  &--currency {
+    width: 100%;
+
+    input {
+      padding: 0 60px 0 19px !important;
+    }
+  }
+
+  &--gallery {
+    margin-top: 37px;
+    width: 100%;
+  }
+
+  &__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &--margin {
+      input {
+        margin-bottom: 12px;
+      }
+    }
+
+    input {
+      background: #edf3fc;
+      border: 1px solid #747c90;
+      box-sizing: border-box;
+      border-radius: 0px 0px 5px 5px;
+      height: 34px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: 300ms;
+      color: #1e1f23;
+
+      &:focus {
+        border: 1px solid #50fafa;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #747c90;
+      }
+
+      &:-moz-placeholder {
+        color: #747c90;
+      }
+
+      &::-moz-placeholder {
+        color: #747c90;
+      }
+
+      &:-ms-input-placeholder {
+        color: #747c90;
+      }
+    }
+  }
+
+  &__percent {
+    font-size: 18px;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+  }
+
+  &__currency {
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 18px;
+    right: 22px;
+  }
+}

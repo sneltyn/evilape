@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+input[type='submit'] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font: 400 12px 'Roboto', sans-serif;
+  color: #fff;
+
+  &.ReactModal__Body--open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: calc(100% - 123px);
+  background: #0E0E18;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ReactModal__Overlay {
+  background: rgba(30, 30, 30, 0.7) !important;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ReactModal__Content {
+  width: auto !important;
+  height: auto !important;
+  padding: 15px 0 !important;
+  position: static !important;
+  background: none !important;
+  border: none !important;
+  overflow: visible !important;
+  margin: auto;
+  max-width: calc(100vw - 30px);
+}
+
+.modal {
+  position: relative;
+  width: 401px;
+  padding: 17px 17px 23px 18px;
+  margin: auto;
+  max-width: 100%;
+  background: #13151e;
+  border-radius: 0px 0px 5px 5px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #9898b1;
+  }
+
+  &__close {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+}
+
+// Radio
+
+.radio {
+  background: #111218;
+  border-radius: 0px;
+  display: block;
+
+  &:nth-child(2n) {
+    background: none;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 54px;
+    height: 50px;
+
+    span {
+      text-align: center;
+      width: 17px;
+      height: 17px;
+      display: block;
+      cursor: pointer;
+      border: 2px solid #50fafa;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin-right: 20px;
+      position: relative;
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #50fafa;
+        opacity: 0;
+        transition: 300ms;
+        visibility: hidden;
+        top: -1px;
+        right: 0;
+        left: -1px;
+        border: 1px solid #50fafa;
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked+span::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 37px;
+  }
+}
+.button {
+  transition: background-color .3s;
+  &:hover {
+    background-color: #3c75fa;
+  }
+}

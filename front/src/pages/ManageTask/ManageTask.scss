@@ -1,0 +1,144 @@
+.manage-task {
+  padding-top: 9px;
+
+  &__back {
+    display: flex;
+    align-items: center;
+    padding-left: 54px;
+    transition: 400ms;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    &:hover {
+      img {
+        transition: 400ms;
+        transform: translateX(-10px);
+      }
+    }
+
+    img {
+      margin-right: 7px;
+      transition: 400ms;
+    }
+    span {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      display: block;
+      color: #ffffff;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-left: 54px;
+    margin-bottom: 13px;
+  }
+
+  &__title {
+    margin-left: 15px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__current {
+    margin-bottom: 13px;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 54px;
+    color: #ffffff;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info {
+    max-width: 255px;
+    width: 100%;
+    flex-shrink: 0;
+    margin-right: 21px;
+  }
+
+  &__form {
+    max-width: 525px;
+    flex-grow: 10;
+    padding: 15px 16px 18px;
+    background: #13151e;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    color: #747c90;
+  }
+
+  &__close {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 17px 20px;
+  }
+
+  &__buttons {
+    margin-top: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__edit {
+    width: 100%;
+    margin-right: 20px;
+    background: #222533;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    span {
+      font-size: 13px;
+      display: block;
+      margin-left: 10px;
+      color: #ffffff;
+    }
+  }
+
+  &__duplicate {
+    width: 100%;
+    background: #1556ee;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    span {
+      font-size: 13px;
+      display: block;
+      margin-left: 10px;
+      color: #ffffff;
+    }
+  }
+}

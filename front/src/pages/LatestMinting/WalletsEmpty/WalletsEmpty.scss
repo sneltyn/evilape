@@ -1,0 +1,28 @@
+.wallet-empty {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    color: #747c90;
+    font-size: 13px;
+  }
+}
+
+.wallet__table--empty {
+  height: auto;
+}

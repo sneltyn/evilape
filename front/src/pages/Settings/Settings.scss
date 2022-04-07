@@ -1,0 +1,142 @@
+.settings {
+  padding-top: 13px;
+
+  &__info {
+    margin-left: 55px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 17px;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+
+  &__text {
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #ffffff;
+      margin-bottom: 3px;
+    }
+
+    span {
+      display: block;
+      font-size: 13px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    border: 1px solid #3c3f64;
+    box-sizing: border-box;
+    padding: 12px 68px;
+    border-bottom: none;
+
+    &--border {
+      border-bottom: 1px solid #3c3f64;
+    }
+
+    &:nth-child(2n) {
+      border-left: none;
+    }
+
+    .field {
+      &__label {
+        font-size: 18px;
+      }
+      input {
+        background: #edf3fc;
+        border: 0.5px solid #747c90;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 32px;
+      }
+    }
+
+    .react-select {
+      .react-select__control {
+        min-height: 32px;
+        height: 32px;
+      }
+
+      .react-select__placeholder {
+        color: #1e1f23;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    color: #747c90;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__save {
+    background: #1556ee;
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 400ms;
+    margin-right: 10px;
+
+    &:hover {
+      background: #50fafa;
+      color: #1e1f23;
+    }
+  }
+
+  &__test {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: none;
+    background: #50fafa;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 400ms;
+    color: #1e1f23;
+    cursor: pointer;
+
+    &:hover {
+      background: #1556ee;
+      color: #fff;
+    }
+  }
+
+  &__description {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    margin-left: 15px;
+  }
+}
